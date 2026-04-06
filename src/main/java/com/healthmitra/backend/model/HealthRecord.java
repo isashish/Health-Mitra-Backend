@@ -14,7 +14,16 @@ public class HealthRecord {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String patientName;
-    private String healthIssue;
-    private LocalDateTime bookingTime;
+    private String email;
+    private String phone;
+    private Integer age;
+    private String gender;
+    private String specialty;
+    private String doctor;
+    private String bookingDate;
+    private String bookingTime;
     private String status;
+    private String notes;
+    private String type;
+    private LocalDateTime createdAt = LocalDateTime.now();
 }
